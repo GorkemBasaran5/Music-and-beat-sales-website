@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/91bd71ff2c.js" crossorigin="anonymous"></script>
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #526D82;
+}
+
+#loginn{
+     position: absolute;
+     top: 20%;
+     right: 0;
+     left: 0;
+}
+
+    </style>
+</head>
+<body>
+
+  
+<!-- !!!!! NAVBAR !!!!! -->
+<nav class="navbar navbar-expand-lg bg-light text-bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="login.html">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="detail.html">Cart</a>
+        </li>
+       
+        
+      </ul>
+      <form class="d-flex mx-5" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success bg-" type="submit">Search</button>
+      </form>
+
+
+
+
+<!-- !!!!!  SEPET KISMI      !!!!!! -->
+
+
+<h2 onclick="GetShoppingCartPage();" style="font-size: 15px;">Shopping Cart</h2>
+
+<i class="fas fa-shopping-cart shopping-cart" onclick="GetDetailPage();"></i>
+              <span class="badge badge-pill badge-success shop-badge" id="cart-count" style="color: red;">0</span>
+    </div>
+  </div>
+</nav>
+
+
+<!-- !!!NAVBAR BİTİŞ -->
+
+
+
+
+  <!-- ! LOGİN -->
+
+
+
+<div class="container" style="
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                           placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="bg-black text-center position-absolute bottom-0 w-100">
+      
+      
+  <div class="text-center p-2 d-flex justify-content-around fs-1 text-decoration-none"
+    style="background-color: rgba(0, 0, 0, 0.2);">
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""> <i class="fa-brands fa-youtube"></i></a>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+</body>
+</html>
